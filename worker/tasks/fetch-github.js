@@ -1,10 +1,6 @@
 var fetch = require('node-fetch');
-const redis = require("redis");
-const client = redis.createClient();
 
-// Redis setup
-const { promisify } = require("util");
-//const getAsync = promisify(client.get).bind(client);
+// Redis setter setup
 const setAsync = promisify(client.set).bind(client);
 
 // Api source
