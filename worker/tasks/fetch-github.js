@@ -24,7 +24,7 @@ async function fetchGitHub(){
         if(jobs.length == 0){break;}
 
         allJobs.push(...jobs);
-        console.log(jobs.length, 'jobs');
+        console.log(`page ${onPage+1}`, jobs.length, 'jobs');
         onPage++;
     }
     console.log('raw total', allJobs.length);
