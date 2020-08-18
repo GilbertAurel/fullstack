@@ -1,0 +1,25 @@
+{
+  "name": "fullstack",
+  "version": "1.0.0",
+  "description": "first fullstack project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GilbertAurel/fullstack.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/GilbertAurel/fullstack/issues"
+  },
+  "homepage": "https://github.com/GilbertAurel/fullstack#readme",
+  "dependencies": {
+    "cron": "^1.8.2",
+    "node-fetch": "^2.6.0",
+    "redis": "^3.0.2"
+  }
+}
