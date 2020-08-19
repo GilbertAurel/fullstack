@@ -4,25 +4,19 @@ import Jobs from './Jobs';
 
 const JOB_API_URL = 'http://localhost:3001/jobs';
 
-// const mockJobs=[
-//   {title: 'SWE 1', company: 'Google'},
-//   {title: 'SWE 2', company: 'Apple'},
-//   {title: 'SWE 3', company: 'Facebook'} 
-// ];
-
-async function fetchJobs(){
+async function fetchJobs(updateCb){
   const res = await fetch(JOB_API_URL);
   const json = await res.json();
 
-  console.log({json});
+  updateCb(json);
 }
 
 function App() {
 
-  const [jobList, updateJobs] = React.useState([]);
+  const [jobList, updateJobs] = React.useState([]); //radong
 
-  React.useEffect(() => {
-    fetchJobs();
+  React.useEffect(() => { //radong
+    fetchJobs(updateJobs);
   }, []);
 
   return (

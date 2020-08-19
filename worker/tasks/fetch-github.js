@@ -3,7 +3,7 @@ var fetch = require('node-fetch');
 // Redis setter setup
 const setAsync = promisify(client.set).bind(client);
 
-// Api source
+// Data source
 const baseURL = 'https://jobs.github.com/positions.json';
 
 async function fetchGitHub(){
