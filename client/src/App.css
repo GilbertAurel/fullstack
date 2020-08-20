@@ -1,5 +1,5 @@
 .App {
-  text-align: center;
+  /* text-align: center; */
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -23,13 +23,31 @@
   color: #61dafb;
 }
 
+body {
+  margin: 20px 40px;
+}
+
 .job {
-  width: 80%;
+  width: 50%;
   margin: 0 auto;
   display: flex;
-  justify-content: space-around;
-  margin: 10px 0;
-  padding: 10px 0;
+  justify-content: space-between;
+  margin: 20px 0;
+  padding: 20px 10px;
+}
+
+.job:hover{
+  cursor: pointer;
+  color: burlywood;
+}
+
+.detail-logo {
+  width: 60px;
+  float: right;
+}
+
+.apply-button {
+  text-decoration: none;
 }
 
 @keyframes App-logo-spin {
